@@ -84,6 +84,10 @@ h6 {
     font-size:.875rem
 }
 
+img {
+    max-width: 100%;
+}
+
 #masthead {
     background: #142C43 url("/img/bg.jpg") no-repeat scroll 50% 50%;
     text-align: center;
