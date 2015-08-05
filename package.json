@@ -1,0 +1,14 @@
+{
+  "name": "BrazilJS-2015",
+  "version": "0.0.1",
+  "description": "BrazilJS 2015 Hotsite",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mozillabrasil/BrazilJS-2015.git"
+  },
+  "author": "Mozilla Brazil Community",
+  "license": "MPL",
+  "bugs": {
+    "url": "https://github.com/mozillabrasil/BrazilJS-2015/issues"
+  }
+}
