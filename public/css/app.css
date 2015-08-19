@@ -15,25 +15,25 @@
     font-family: "Open Sans Light";
     src:url("/fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/OpenSans-LightItalic-webfont.woff") format("woff"),url("/fonts/OpenSans-LightItalic-webfont.ttf") format("truetype");
     font-weight: normal;
-    font-style: italic
+    font-style: italic;
 }
 @font-face {
     font-family: "Open Sans";
     src:url("/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/OpenSans-Regular-webfont.woff") format("woff"),url("/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
 }
 @font-face {
     font-family: "Open Sans";
     src:url("/fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/OpenSans-Bold-webfont.woff") format("woff"),url("/fonts/OpenSans-Bold-webfont.ttf") format("truetype");
     font-weight: bold;
-    font-style: normal
+    font-style: normal;
 }
 @font-face {
     font-family: "Open Sans";
     src:url("/fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/OpenSans-Italic-webfont.woff") format("woff"),url("/fonts/OpenSans-Italic-webfont.ttf") format("truetype");
     font-weight: normal;
-    font-style: italic
+    font-style: italic;
 }
 
 body {
@@ -56,44 +56,50 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size:48px;
-    font-size:3rem
+    font-size:3rem;
 }
 
 h2 {
     font-size:32px;
-    font-size:2rem
+    font-size:2rem;
 }
 
 h3 {
     font-size:28px;
-    font-size:1.75rem
+    font-size:1.75rem;
 }
 
 h4 {
     font-size:24px;
-    font-size:1.5rem
+    font-size:1.5rem;
 }
 
 h5 {
     font-size:16px;
-    font-size:1rem
+    font-size:1rem;
 }
 
 h6 {
     font-size:14px;
-    font-size:.875rem
+    font-size:.875rem;
 }
 
 img {
     max-width: 100%;
 }
 
+.totalv {
+    min-height: 100vh;
+}
+
+.ptop {
+    padding-top: 80px;
+}
+
 #masthead {
-    background: #142C43 url("/img/bg.jpg") no-repeat scroll 50% 50%;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 80px;
-    box-shadow: 0 7px 12px rgba(0,0,0,0.8);
+    background: #1E1E21 radial-gradient(ellipse farthest-side at left top , #00549E 0px, transparent 100%) no-repeat scroll center top / 100% 500px;
 }
 
 #masthead h1 {
@@ -107,4 +113,82 @@ img {
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.schedule .item {
+    background: #FFF;
+    margin-top: 40px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 0 2px #000;
+}
+
+.schedule .item .time {
+    font-family: "Open Sans Light";
+    background: #1A1A1A;
+    padding: 5px 30px 5px 30px;
+    color: #FFF;
+    position: relative;
+    top: -15px;
+    margin-left: -20px;
+}
+
+.schedule .item .thumb {
+    background: #1E1E21;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    box-shadow: 0 0 2px #CCC;
+    float:left;
+    display: block;
+    margin-right: 20px;
+}
+
+.schedule .item .author {
+    font-family: "Open Sans";
+    color: #585858;
+}
+
+.schedule .item h4 {
+    margin-top: 20px;
+}
+
+.schedule .item {
+    min-height: 130px;
+}
+
+.schedule .item p {
+    font-family: "Open Sans";
+    color: rgb(40,40,40);
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+#masthead h1 {
+    margin-top: 20px;
+}
+  
+#masthead h2 {
+    color: #A2B4C7;
+    text-shadow: none;
+    margin-top: 20px;
+}
+
+#talks {
+    background: #123251;
+    margin-top: -80px;
+}
+
+#talks h1, #workshops h1 {
+    color: #FFF;
+    text-shadow: none;
+    text-align: center;
+}
+
+#workshops {
+    margin-top: -80px;
+}
+
+#workshops {
+    padding-top: 200px;
 }
