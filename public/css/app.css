@@ -174,7 +174,7 @@ img {
     margin-top: 20px;
 }
 
-#talks {
+#schedule {
     background: #123251;
     margin-top: -80px;
 }
@@ -185,10 +185,28 @@ img {
     text-align: center;
 }
 
-#workshops {
-    margin-top: -80px;
+@media (min-width: 600px) {
+    #schedule #talks, #schedule #workshops {
+        width: 45%;
+        float: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+                                        
+@media (max-width: 600px) {
+    #schedule #workshops {
+        margin-top: 40px;
+    }
 }
 
-#workshops {
-    padding-top: 200px;
+#schedule .item:before {
+    content: " ";
+    padding: 30px 20px;
+    float: right;
+    transform: rotate(-45.0deg);
+    position: relative;
+    right: -34px;
+    top: -43px;
+    background: #123251;
 }
