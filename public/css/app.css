@@ -98,14 +98,18 @@ img {
 
 #masthead {
     text-align: center;
-    padding-top: 80px;
     background: url(/img/bg.jpg);
     background-size: cover;
+    padding-top: 50px;
 }
 
 #masthead h1 {
     color: #FFF;
     text-shadow: none;
+}
+
+#masthead .mozilla img {
+    max-width: 50%;
 }
 
 .container {
@@ -165,19 +169,14 @@ img {
     line-height: 1.6em;
 }
 
-#masthead h1 {
-    margin-top: 20px;
-}
-  
 #masthead h2 {
     color: #A2B4C7;
     text-shadow: none;
-    margin-top: 20px;
 }
 
 #schedule {
     background: #123251;
-    margin-top: -80px;
+    margin-top: -50px;
 }
 
 #talks h1, #workshops h1 {
@@ -211,3 +210,34 @@ img {
     top: -43px;
     background: #123251;
 }
+
+#masthead {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (min-width: 1000px) {
+    #masthead .foxy {
+        width: 50%;
+        float: right;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    #masthead .foxy {
+        width: 75%;
+        float: right;
+    }
+}
+
+@media (max-width: 600px) {
+    #masthead .foxy {
+        width: 100%;
+    }
+}
+
+#masthead .foxy img {
+    max-width: 80%;
+    margin-top: 40px;
+}
+                
