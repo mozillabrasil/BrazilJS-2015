@@ -99,7 +99,8 @@ img {
 #masthead {
     text-align: center;
     padding-top: 80px;
-    background: #1E1E21 radial-gradient(ellipse farthest-side at left top , #00549E 0px, transparent 100%) no-repeat scroll center top / 100% 500px;
+    background: url(/img/bg.jpg);
+    background-size: cover;
 }
 
 #masthead h1 {
