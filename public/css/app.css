@@ -98,8 +98,10 @@ img {
 
 #masthead {
     text-align: center;
-    background: url(/img/bg.jpg);
-    background-size: cover;
+    background: url(/img/foxy.png), url(/img/bg.jpg);
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-position: bottom 80px right 20px, center;
     padding-top: 50px;
 }
 
@@ -108,8 +110,28 @@ img {
     text-shadow: none;
 }
 
-#masthead .mozilla img {
-    max-width: 50%;
+@media (min-width: 768px) {
+
+    #masthead .mozilla img {
+        max-width: 35%;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+
+    #masthead .mozilla img {
+        max-width: 50%;
+    }
+
+}
+
+@media (max-width: 500px;){
+
+    #masthead .mozilla img {
+        max-width: 80%;
+    }
+
 }
 
 .container {
@@ -118,6 +140,11 @@ img {
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.mcontainer {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .schedule .item {
@@ -177,6 +204,7 @@ img {
 #schedule {
     background: #123251;
     margin-top: -50px;
+    box-shadow: 0 -1px 25px #1A1A1A;
 }
 
 #talks h1, #workshops h1 {
@@ -241,3 +269,96 @@ img {
     margin-top: 40px;
 }
                 
+#staff .item img {
+    height: 135px;
+    float: left;
+    background: #1E1E21;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+        
+#staff .item {
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+@media (min-width: 850px) {
+    #staff .item {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 675px) and (max-width: 850px) {
+    #staff .item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 675px) {
+    #staff .item {
+        width: 100%;
+    }
+}
+              
+#staff .item .content {
+    background: #FFF;
+    margin: 10px;
+    border: 5px solid #1A1A1A;
+}
+
+#staff h1 {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: none;
+}
+
+#staff .item .content{
+    padding: 10px;
+    height: 115px;
+}
+
+#staff .item h2 {
+    text-align: center;
+}
+  
+#staff .item .content .links {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    left: 155px;
+}
+
+#staff .item p {
+    font-family: "Open Sans Light";
+}
+
+#staff .item .links {
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+}
+      
+#staff .item .links li {
+    display: inline;
+    transition: 0.5s;
+    background: #1A1A1A;
+    padding: 15px 10px 10px 10px;
+}
+
+#staff .item .links a {
+    color: #FFF;
+    font-size: 1.5em;
+}
+                  
+#staff .item .links li:hover {
+    background: #123251;
+    transition: 0.5s;
+}
+
+#workshops {
+    padding-bottom: 50px;
+}
