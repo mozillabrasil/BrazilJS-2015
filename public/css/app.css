@@ -125,9 +125,13 @@ img {
         max-width: 50%;
     }
 
+    #webvr .intra{
+      width: 90%;
+    }
+
 }
 
-@media (max-width: 500px;){
+@media (max-width: 500px){
 
     #masthead .mozilla img {
         max-width: 80%;
@@ -286,22 +290,46 @@ img {
     position: relative;
 }
 
-@media (min-width: 850px) {
-    #staff .item {
-        width: 33.33%;
-    }
+#webvr{
+  color: #fff;
 }
 
-@media (min-width: 675px) and (max-width: 850px) {
-    #staff .item {
-        width: 50%;
-    }
+#webvr .intra{
+  width: 45%;
+  padding: 2.5%;
+  float: left;
 }
 
-@media (max-width: 675px) {
-    #staff .item {
-        width: 100%;
-    }
+#webvr ul{
+  margin: 0;
+  padding: 0;
+}
+
+#webvr ul li{
+  list-style: none;
+  font-size: 20px;
+  padding: 10px 5px;
+  border-bottom: 1px dashed #A2B4C7;
+}
+
+#webvr ul li label{
+  font-weight: bold;
+}
+
+#webvr ul li input[name="step"] + dl{
+	display: none;
+}
+
+#webvr ul li input:checked + dl{
+	display: block;
+}
+
+#webvr ul li dd{
+  margin-left: 10px;
+}
+
+#webvr a{
+  color: #A2B4C7;
 }
 
 #staff .item .content {
@@ -365,29 +393,6 @@ img {
 }
 
 
-#schedule{
-  color: #fff;
-}
-
-#schedule ul li{
-  list-style: none;
-  font-size: 20px;
-  padding: 10px 5px;
-  border-bottom: 1px dashed #A2B4C7;
-}
-
-#schedule ul li label{
-  font-weight: bold;
-}
-
-#schedule ul li input[name="step"] + dl{
-	display: none;
-}
-
-#schedule ul li input:checked + dl{
-	display: block;
-}
-
 #newsletter a {
     color: #FFF;
     text-decoration: none;
@@ -405,4 +410,22 @@ img {
     color: #000;
     border: 2px solid #000;
     transition: 0.5s;
+}
+
+@media (min-width: 850px) {
+    #staff .item {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 675px) and (max-width: 850px) {
+    #staff .item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 675px) {
+    #staff .item {
+        width: 100%;
+    }
 }

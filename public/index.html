@@ -25,36 +25,74 @@
 
                 <div class="row schedule" id="talks" >
                     <h1>WebVR</h1>
-                    <ul>
-            					<li>
-            						<label for="step1">How to get started with WebVR</label>
-            						<input id="step1" type="checkbox" name="step" hidden />
-            						<dl>
-            						  <dt>Download Firefox Nightly: <a href="https://nightly.mozilla.org/">https://nightly.mozilla.org/</a></dt>
-            						  <dd>Open Nightly and install the WebVR Add­on: <a href="http://mozvr.com/downloads/">http://mozvr.com/downloads/</a></dd>
-            						  <dt>If you are using an Oculus Rift...</dt>
-            						  <dd>Install the latest runtime: https://developer.oculus.com/</dd>
-            						  <dd>Configure your displays per: http://mozvr.com/downloads/</dd>
-            						  <dd>Restart Nightly and visit http://mozvr.com/projects/sechelt/. You should see a fullscreen "goggles" icon. Click on it to enter VR mode! Press escape to exit VR mode.</dd>
-            						</dl>
-            					</li>
-            					<li>
-            						<label for="step2">How can I start building WebVR sites</label>
-            						<input id="step2" type="checkbox" name="step" hidden />
-            						<dl>
-            						  <dt>For technical primer, see Mozilla engineer Vlad Vukicevic's original WebVR blog post: <br/>
-            								http://blog.bitops.com/blog/2014/06/26/first­steps­for­vr­on­the­web/</dt>
-            						  <dd>To start building WebVR experiences, it's easiest to start with WebVR boilerplates:<br/>
-            https://github.com/mozvr/<br/>
-            https://github.com/borismus/webvr­boilerplate/<br/>
-            https://github.com/povdocs/webvr­starter­kit</dd>
-            						  <dt>For deeper details on the WebVR API and it's implementation, we recommend:<br/>
-            https://developer.mozilla.org/en­US/docs/Web/API/WebVR_API<br/>
-            http://mozvr.github.io/webvr­spec/webvr.html</dd>
-            						</dl>
-            					</li>
-            				</ul>
+                    <div class="intra">
+                      <ul>
+                        <li>
+                          <label for="step1">How to get started with WebVR</label>
+                          <input id="step1" type="checkbox" name="step" hidden />
+                          <dl>
+                            <dd>Download Firefox Nightly: <a href="https://nightly.mozilla.org/">https://nightly.mozilla.org/</a></dd>
+                            <dd>Open Nightly and install the WebVR Add­on: <a href="http://mozvr.com/downloads/">http://mozvr.com/downloads/</a></dd>
+                            <dd>If you are using an Oculus Rift...</dd>
+                            <dd>Install the latest runtime: <a href="https://developer.oculus.com/">https://developer.oculus.com/</a></dd>
+                            <dd>Configure your displays per: <a href="http://mozvr.com/downloads/">http://mozvr.com/downloads/</a></dd>
+                            <dd>Restart Nightly and visit <a href="http://mozvr.com/projects/sechelt/">http://mozvr.com/projects/sechelt/</a>. You should see a fullscreen "goggles" icon. Click on it to enter VR mode! Press escape to exit VR mode.</dd>
+                          </dl>
+                        </li>
+                        <li>
+                          <label for="step2">How can I start building WebVR sites</label>
+                          <input id="step2" type="checkbox" name="step" hidden />
+                          <dl>
+                            <dd>For technical primer, see Mozilla engineer Vlad Vukicevic's original WebVR blog post: <br/>
+                              <a href="http://blog.bitops.com/blog/2014/06/26/first­steps­for­vr­on­the­web/">http://blog.bitops.com/blog/2014/06/26/first­steps­for­vr­on­the­web/</a></dd>
+                            <dd>To start building WebVR experiences, it's easiest to start with WebVR boilerplates:<br/>
+  <a href="https://github.com/mozvr/">https://github.com/mozvr/</a><br/>
+              <a href="https://github.com/borismus/webvr­boilerplate/">https://github.com/borismus/webvr­boilerplate/</a><br/>
+              <a href="https://github.com/povdocs/webvr­starter­kit">https://github.com/povdocs/webvr­starter­kit</a></dd>
+                            <dd>For deeper details on the WebVR API and it's implementation, we recommend:<br/>
+              <a href="https://developer.mozilla.org/en­US/docs/Web/API/WebVR_API">https://developer.mozilla.org/en­US/docs/Web/API/WebVR_API</a><br/>
+              <a href="http://mozvr.github.io/webvr­spec/webvr.html">http://mozvr.github.io/webvr­spec/webvr.html</a></dd>
+                          </dl>
+                        </li>
+                        <li>
+                          <label for="step3">What headsets are supported? Do I need an Oculus Rift?</label>
+                          <input id="step3" type="checkbox" name="step" hidden />
+                          <dl>
+                            <dd>The Oculus Rift DK2 is currently the best­supported headset for WebVR development. Limited
 
+  support for mobile browsers is possible using responsive boilerplates like <a href="https://github.com/borismus/webvr­boilerplate">https://github.com/borismus/webvr­boilerplate</a>,but the Rift has the best combination of capabilities
+
+  (eg positional tracking), performance (eg resolution) etc. Support for additional headsets like the
+
+  HTC Vive is being worked on.</dd>
+                          </dl>
+                        </li>
+
+                        <li>
+                          <label for="step4">The demos run slow or choppy for me. How can I improve performance?</label>
+                          <input id="step4" type="checkbox" name="step" hidden />
+                          <dl>
+                            <dd>Make sure to follow the VR setup tips at <a href="http://mozvr.com/downloads/">http://mozvr.com/downloads/</a>. VR is a very new
+
+  technology, and a few settings can make the difference between a good or bad experience.</dd>
+                          </dl>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="intra">
+                      <ul>
+                        <li>
+                          <label>How can I learn more and join the conversation?</label>
+                          <dl>
+                            <dd><a href="http://mozvr.com/">mozvr.com</a></dd>
+                            <dd>IRC: #vr at <a href="http://irc.mozilla.org/">irc.mozilla.org</a></dd>
+                            <dd>Mailing list: <a href="https://mail.mozilla.org/listinfo/web-vr-discuss">https://mail.mozilla.org/listinfo/web­vr­discuss</a></dd>
+                            <dd>Twitter: <a href="https://twitter.com/search?q=%23webvr">https://twitter.com/search?q=%23webvr</a></dd>
+                            <dd>GitHub: <a href="https://github.com/mozvr/">https://github.com/mozvr/</a></dd>
+                        </dl>
+                        </li>
+                      </ul>
+                    </div>
                 </div>
 
             </div>
