@@ -41,6 +41,7 @@ body {
     padding: 0;
     border-top: 2px solid #FFF;
     background: #1E1E21;
+    font-family: "Open Sans Light";
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -115,7 +116,7 @@ img {
     #masthead .mozilla img {
         max-width: 35%;
     }
-    
+
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
@@ -221,7 +222,7 @@ img {
         margin-right: 2.5%;
     }
 }
-                                        
+
 @media (max-width: 600px) {
     #schedule #workshops {
         margin-top: 40px;
@@ -268,7 +269,7 @@ img {
     max-width: 80%;
     margin-top: 40px;
 }
-                
+
 #staff .item img {
     height: 135px;
     float: left;
@@ -278,7 +279,7 @@ img {
     margin-top: -10px;
     margin-left: -10px;
 }
-        
+
 #staff .item {
     width: 33.33%;
     float: left;
@@ -302,7 +303,7 @@ img {
         width: 100%;
     }
 }
-              
+
 #staff .item .content {
     background: #FFF;
     margin: 10px;
@@ -324,7 +325,7 @@ img {
 #staff .item h2 {
     text-align: center;
 }
-  
+
 #staff .item .content .links {
     position: absolute;
     bottom: 10px;
@@ -341,7 +342,7 @@ img {
     padding-left: 0;
     text-align: right;
 }
-      
+
 #staff .item .links li {
     display: inline;
     transition: 0.5s;
@@ -353,7 +354,7 @@ img {
     color: #FFF;
     font-size: 1.5em;
 }
-                  
+
 #staff .item .links li:hover {
     background: #123251;
     transition: 0.5s;
@@ -361,4 +362,27 @@ img {
 
 #workshops {
     padding-bottom: 50px;
+}
+
+#schedule{
+  color: #fff;
+}
+
+#schedule ul li{
+  list-style: none;
+  font-size: 20px;
+  padding: 10px 5px;
+  border-bottom: 1px dashed #A2B4C7;
+}
+
+#schedule ul li label{
+  font-weight: bold;
+}
+
+#schedule ul li input[name="step"] + dl{
+	display: none;
+}
+
+#schedule ul li input:checked + dl{
+	display: block;
 }
