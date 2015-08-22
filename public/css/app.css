@@ -383,7 +383,9 @@ img {
     border: 2px solid #000;
     transition: 0.5s;
 }
-
+section{
+  width: 100%;
+}
 @media (min-width: 850px) {
     #staff .item {
         width: 33.33%;
