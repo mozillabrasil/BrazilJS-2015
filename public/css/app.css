@@ -363,23 +363,3 @@ img {
     padding-bottom: 50px;
 }
 
-#webvr .description{
-	width: 50%;
-	padding: 2rem 2rem 0 5.5rem;
-	float: right;
-}
-
-#webvr .description h1{
-	color: #fff;
-    font-size: 4.5rem;
-    font-weight: 800;
-    text-shadow: 1px 1px #000; /* add cor azul mais escuro */
-}
-
-#webvr .description ul li input + dl{
-	display: none;
-}
-
-.webvr .description ul li input:checked + dl{
-	display: block;
-}
